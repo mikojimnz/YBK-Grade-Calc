@@ -11,60 +11,63 @@
 <style>
 /* App-scoped layout and offline fallback using established MooreKit tokens. */
 .bmc-v3.beat-app{--bmc-v3-black:#242122;--bmc-v3-gold:#ddb75f;--bmc-v3-gold-dark:#a9822f;--bmc-v3-gray-100:#f5f3f1;--bmc-v3-gray-300:#d5d2d2;--bmc-v3-gray-700:#5f5b5c;--ink:var(--bmc-v3-black);--gold:var(--bmc-v3-gold);margin:0;background:var(--bmc-v3-gray-100);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif}
-.beat-app *{box-sizing:border-box}.beat-app [hidden]{display:none!important}.beat-app .bmc-container{max-width:1160px;margin:auto;padding:0 28px}.beat-app .masthead{border-top:6px solid var(--gold);background:var(--ink);color:white;padding:20px 0}.beat-app .brand{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.beat-app .mark{display:grid;place-items:center;background:var(--gold);color:var(--ink);width:38px;height:42px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);font-size:17px;letter-spacing:0}.beat-app main{padding-top:30px!important;padding-bottom:50px!important}.beat-app h1{font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.035em;margin:0 0 12px;color:var(--ink);font-weight:700}.beat-app h2{font-size:19px;line-height:1.3;margin:0;color:var(--ink)}.beat-app p{margin:0 0 14px}.beat-app .intro{color:var(--bmc-v3-gray-700);max-width:760px;font-size:15px}.beat-app .mode-nav{display:flex;gap:0;margin:24px 0 0;border-bottom:2px solid var(--ink)}.beat-app button{font:inherit;cursor:pointer;border-radius:0}.beat-app .mode{padding:13px 22px;border:1px solid var(--bmc-v3-gray-300);border-bottom:0;background:white;color:var(--ink);font-weight:700}.beat-app .mode[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink);box-shadow:inset 0 4px var(--gold)}.beat-app button:hover{background:var(--gold);color:var(--ink)}.beat-app button:focus-visible,.beat-app summary:focus-visible{outline:3px solid #856216;outline-offset:3px}.beat-app .summary{display:grid;grid-template-columns:1.35fr 1fr 1fr;background:white;border:1px solid var(--bmc-v3-gray-300);border-top:0;margin-bottom:24px}.beat-app .metric{padding:21px 24px}.beat-app .metric+.metric{border-left:1px solid var(--bmc-v3-gray-300)}.beat-app .metric:first-child{background:#eee3ca}.beat-app .eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}.beat-app .big{font-size:42px;line-height:1.25;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.04em}.beat-app .metric small{display:block;color:var(--bmc-v3-gray-700);font-size:12px}.beat-app .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin:22px 0 10px}.beat-app .section-head span{font-size:13px;color:var(--bmc-v3-gray-700)}.beat-app .table-wrap{overflow-x:auto;background:white;border:1px solid var(--bmc-v3-gray-300)}.beat-app table{width:100%;border-collapse:collapse;table-layout:fixed;margin:0;font-size:14px}.beat-app th,.beat-app td{padding:11px 9px;border-bottom:1px solid #e7e4e1;text-align:center;vertical-align:middle}.beat-app thead th{background:#eae7e3;font-size:12px;font-weight:700;line-height:1.3}.beat-app th:first-child{text-align:left;padding-left:18px}.beat-app tbody th{font-size:14px;font-weight:600}.beat-app th small{display:block;color:var(--bmc-v3-gray-700);font-weight:400;font-size:11px;margin-top:4px}.beat-app tr:last-child>*{border-bottom:0}.beat-app tbody tr:nth-child(even){background:#fcfbfa}.beat-app input[type=number]{width:100%;max-width:88px;height:40px;border:1px solid #a9a4a1;background:white;color:var(--ink);border-radius:0;padding:7px 5px;text-align:center;font:600 16px Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums;appearance:textfield;-moz-appearance:textfield}.beat-app input::-webkit-inner-spin-button,.beat-app input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.beat-app input[type=number]:focus{outline:2px solid #856216;outline-offset:1px;background:#fff9e9}.beat-app input[aria-invalid=true]{border:2px solid #a52b24;background:#fff1ef}.beat-app input[type=checkbox]{width:18px;height:18px;accent-color:var(--ink);cursor:pointer}.beat-app .total{font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}.beat-app .row-state{display:block;font-size:10px;font-weight:400;color:var(--bmc-v3-gray-700)}.beat-app .caption-table{min-width:800px}.beat-app .story-table,.beat-app .mod-table{min-width:520px}.beat-app .caption-table th:first-child{width:116px}.beat-app .caption-table th:nth-last-child(2){width:86px}.beat-app .caption-table th:last-child{width:105px}.beat-app .row-actions{display:flex;gap:10px;align-items:center;margin-top:12px}.beat-app .bmc-btn{padding:9px 15px;border:1px solid var(--ink);font-weight:700;font-size:13px;line-height:1.4}.beat-app .bmc-btn-dark{background:var(--ink);color:white}.beat-app .bmc-btn-dark:hover{background:var(--gold);color:var(--ink)}.beat-app .plain-btn{background:transparent;color:var(--ink)}.beat-app .note{font-size:12px;color:var(--bmc-v3-gray-700);margin-top:10px}.beat-app .status{font-size:13px;margin:14px 0;color:#78540c;min-height:20px}.beat-app details{border-top:1px solid var(--bmc-v3-gray-300);padding:15px 0;margin-top:22px}.beat-app summary{cursor:pointer;font-size:14px;font-weight:700}.beat-app .rubric{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding-top:18px;font-size:13px}.beat-app .rubric h3{font-size:14px;margin:0 0 10px}.beat-app .rubric p{margin-bottom:10px}.beat-app footer{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px;color:var(--bmc-v3-gray-700)}.beat-app .formula{font-variant-numeric:tabular-nums}
+.beat-app *{box-sizing:border-box}.beat-app [hidden]{display:none!important}.beat-app .bmc-container{max-width:1160px;margin:auto;padding:0 28px}.beat-app .masthead{border-top:6px solid var(--gold);background:var(--ink);color:white;padding:20px 0}.beat-app .brand{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.beat-app .mark{display:grid;place-items:center;background:var(--gold);color:var(--ink);width:38px;height:42px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);font-size:17px;letter-spacing:0}.beat-app main{padding-top:30px!important;padding-bottom:50px!important}.beat-app h1{font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.035em;margin:0 0 12px;color:var(--ink);font-weight:700}.beat-app h2{font-size:19px;line-height:1.3;margin:0;color:var(--ink)}.beat-app p{margin:0 0 14px}.beat-app .intro{color:var(--bmc-v3-gray-700);max-width:760px;font-size:15px}.beat-app .mode-nav{display:flex;gap:0;margin:24px 0 0;border-bottom:2px solid var(--ink)}.beat-app button{font:inherit;cursor:pointer;border-radius:0}.beat-app .mode{padding:13px 22px;border:1px solid var(--bmc-v3-gray-300);border-bottom:0;background:white;color:var(--ink);font-weight:700}.beat-app .mode[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink);box-shadow:inset 0 4px var(--gold)}.beat-app button:hover{background:var(--gold);color:var(--ink)}.beat-app button:focus-visible,.beat-app summary:focus-visible{outline:3px solid #856216;outline-offset:3px}.beat-app .summary{display:grid;grid-template-columns:1.35fr 1fr 1fr;background:white;border:1px solid var(--bmc-v3-gray-300);border-top:0;margin-bottom:24px}.beat-app .metric{padding:21px 24px}.beat-app .metric+.metric{border-left:1px solid var(--bmc-v3-gray-300)}.beat-app .metric:first-child{background:#eee3ca}.beat-app .eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}.beat-app .big{font-size:42px;line-height:1.25;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.04em}.beat-app .metric small{display:block;color:var(--bmc-v3-gray-700);font-size:12px}.beat-app .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin:22px 0 10px}.beat-app .section-head span{font-size:13px;color:var(--bmc-v3-gray-700)}.beat-app .table-wrap{overflow-x:auto;background:white;border:1px solid var(--bmc-v3-gray-300)}.beat-app table{width:100%;border-collapse:collapse;table-layout:fixed;margin:0;font-size:14px}.beat-app th,.beat-app td{padding:11px 9px;border-bottom:1px solid #e7e4e1;text-align:center;vertical-align:middle}.beat-app thead th{background:#eae7e3;font-size:12px;font-weight:700;line-height:1.3}.beat-app th:first-child{text-align:left;padding-left:18px}.beat-app tbody th{font-size:14px;font-weight:600}.beat-app th small{display:block;color:var(--bmc-v3-gray-700);font-weight:400;font-size:11px;margin-top:4px}.beat-app tr:last-child>*{border-bottom:0}.beat-app tbody tr:nth-child(even){background:#fcfbfa}.beat-app input.score{width:100%;max-width:88px;height:40px;border:1px solid #a9a4a1;background:white;color:var(--ink);border-radius:0;padding:7px 5px;text-align:center;font:600 16px Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums;appearance:textfield;-moz-appearance:textfield}.beat-app input::-webkit-inner-spin-button,.beat-app input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.beat-app input.score:focus{outline:2px solid #856216;outline-offset:1px;background:#fff9e9}.beat-app input[aria-invalid=true]{border:2px solid #a52b24;background:#fff1ef}.beat-app input[type=checkbox]{width:18px;height:18px;accent-color:var(--ink);cursor:pointer}.beat-app .total{font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}.beat-app .row-state{display:block;font-size:10px;font-weight:400;color:var(--bmc-v3-gray-700)}.beat-app .caption-table{min-width:800px}.beat-app .story-table,.beat-app .mod-table{min-width:520px}.beat-app .caption-table th:first-child{width:116px}.beat-app .caption-table th:nth-last-child(2){width:86px}.beat-app .caption-table th:last-child{width:105px}.beat-app .row-actions{display:flex;gap:10px;align-items:center;margin-top:12px}.beat-app .bmc-btn{padding:9px 15px;border:1px solid var(--ink);font-weight:700;font-size:13px;line-height:1.4}.beat-app .bmc-btn-dark{background:var(--ink);color:white}.beat-app .bmc-btn-dark:hover{background:var(--gold);color:var(--ink)}.beat-app .plain-btn{background:transparent;color:var(--ink)}.beat-app .note{font-size:12px;color:var(--bmc-v3-gray-700);margin-top:10px}.beat-app .status{font-size:13px;margin:14px 0;color:#78540c;min-height:20px}.beat-app details{border-top:1px solid var(--bmc-v3-gray-300);padding:15px 0;margin-top:22px}.beat-app summary{cursor:pointer;font-size:14px;font-weight:700}.beat-app .rubric{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding-top:18px;font-size:13px}.beat-app .rubric h3{font-size:14px;margin:0 0 10px}.beat-app .rubric p{margin-bottom:10px}.beat-app footer{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px;color:var(--bmc-v3-gray-700)}.beat-app .formula{font-variant-numeric:tabular-nums}
 @media(max-width:650px){.beat-app .bmc-container{padding:0 15px}.beat-app main{padding-top:22px!important}.beat-app .mode{padding:12px;font-size:13px;flex:1}.beat-app .metric{padding:16px 12px}.beat-app .big{font-size:30px}.beat-app .metric .eyebrow{font-size:10px}.beat-app .rubric{grid-template-columns:1fr;gap:10px}.beat-app .section-head{align-items:flex-start}.beat-app footer{align-items:flex-start}.beat-app .brand{font-size:10px}.beat-app .section-head span{font-size:11px;max-width:145px;text-align:right}}
+.beat-app .calculation-controls{border:1px solid var(--bmc-v3-gray-300);border-bottom:2px solid var(--ink);margin:24px 0 0;padding:14px 20px 16px;background:white}.beat-app .calculation-controls legend{font-size:12px;font-weight:700;padding:0 6px}.beat-app .control-options{display:flex;flex-wrap:wrap;gap:12px 28px;margin-bottom:12px}.beat-app .control-options label,.beat-app .auto-option,.beat-app .item-label{display:flex;align-items:center;gap:9px;cursor:pointer}.beat-app .control-options label{font-weight:700;font-size:14px}.beat-app .auto-option{font-size:13px}.beat-app .calculation-controls .note{margin-bottom:0}.beat-app tr[data-included=false] .row-state{font-weight:700;color:#78540c}.beat-app .caption-table th:first-child{width:144px}.beat-app .story-table th:first-child,.beat-app .mod-table th:first-child{width:135px}
 </style>
 </head>
 <body class="bmc-v3 beat-app">
 <header class="masthead"><div class="bmc-container brand"><span class="mark" aria-hidden="true">B</span><span>Bishop Moore Catholic <br>Yearbook · BEAT grading</span></div></header>
 <main class="bmc-container">
 <h1>BEAT grade calculator</h1>
-<p class="intro">Enter earned points, then Tab to the next category. Each completed item is worth 100 points. Blank items are excluded; enter 0 when a category earns no points.</p>
-<nav class="mode-nav" aria-label="Grading mode"><button type="button" class="mode" id="page-mode" aria-pressed="true" aria-controls="page-panel">Story + dom / captions</button><button type="button" class="mode" id="mod-mode" aria-pressed="false" aria-controls="mod-panel">Mods</button></nav>
+<p class="intro">Choose the items to include, then enter earned points. Type two digits to advance automatically: 05 = 5 points, 00 = 0. Each completed item is worth 100 points; blank items are excluded.</p>
+<fieldset class="calculation-controls"><legend>Include in the average</legend><div class="control-options"><label><input type="checkbox" id="include-story" data-group="story" checked> Story</label><label><input type="checkbox" id="include-caption" data-group="caption" checked> Dominant + captions</label><label><input type="checkbox" id="include-mod" data-group="mod" checked> Mods</label></div><label class="auto-option"><input type="checkbox" id="auto-advance" checked> Auto-advance after 2 digits</label><p class="note">Use the row checkboxes to select individual items. Turn off auto-advance to enter decimal scores.</p></fieldset>
 <section class="summary" aria-label="Grade summary" aria-live="polite" aria-atomic="true">
-<div class="metric"><div class="eyebrow" id="grade-label">Page average</div><div class="big" id="grade">—</div><small class="formula" id="formula">No completed items yet</small></div>
-<div class="metric"><div class="eyebrow">Completed items</div><div class="big" id="completed">0</div><small id="count-detail">Story + dominant + captions</small></div>
-<div class="metric"><div class="eyebrow" id="secondary-label">Caption average</div><div class="big" id="secondary">—</div><small id="secondary-detail">Dominant + photo captions only</small></div>
+<div class="metric"><div class="eyebrow" id="grade-label">Selected average</div><div class="big" id="grade">—</div><small class="formula" id="formula">No completed items yet</small></div>
+<div class="metric"><div class="eyebrow">Completed items</div><div class="big" id="completed">0</div><small id="count-detail">Selected, fully scored items</small></div>
+<div class="metric"><div class="eyebrow" id="secondary-label">Unfinished items</div><div class="big" id="secondary">0</div><small id="secondary-detail">Selected items still needing scores</small></div>
 </section>
 <div id="page-panel">
 <section aria-labelledby="story-heading"><div class="section-head"><h2 id="story-heading">Story</h2><span>3 categories · 100 points</span></div><div class="table-wrap"><table class="story-table"><thead><tr><th scope="col">Item</th><th scope="col">Headline<small>/ 5</small></th><th scope="col">Subheadline<small>/ 5</small></th><th scope="col">Copy<small>/ 90</small></th><th scope="col">Total<small>/ 100</small></th></tr></thead><tbody id="story-body"></tbody></table></div></section>
 <section aria-labelledby="captions-heading"><div class="section-head"><h2 id="captions-heading">Dominant + captions</h2><span>6 categories · 100 points each</span></div><div class="table-wrap"><table class="caption-table"><thead><tr><th scope="col">Item</th><th scope="col">Photo selection<small>/ 5</small></th><th scope="col">Photo by + file name<small>/ 10</small></th><th scope="col">A<small>/ 5</small></th><th scope="col">B<small>/ 15</small></th><th scope="col">C<small>/ 15</small></th><th scope="col">DQ<small>/ 50</small></th><th scope="col">“Favorite”<small>−50 points</small></th><th scope="col">Total<small>/ 100</small></th></tr></thead><tbody id="caption-body"></tbody></table></div><div class="row-actions"><button type="button" class="bmc-btn bmc-btn-dark" id="add-caption">+ Add caption</button></div><p class="note">“Favorite” applies an additional 50-point deduction to that item. Enter category scores before this deduction; item totals stop at 0.</p></section>
 </div>
-<div id="mod-panel" hidden><section aria-labelledby="mods-heading"><div class="section-head"><h2 id="mods-heading">Mods</h2><span>4 categories · 100 points each</span></div><div class="table-wrap"><table class="mod-table"><thead><tr><th scope="col">Item</th><th scope="col">Mod title<small>/ 5</small></th><th scope="col">Captions / copy<small>/ 60</small></th><th scope="col">Graphics / photos<small>/ 30</small></th><th scope="col">Photo bys<small>/ 5</small></th><th scope="col">Total<small>/ 100</small></th></tr></thead><tbody id="mod-body"></tbody></table></div><div class="row-actions"><button type="button" class="bmc-btn bmc-btn-dark" id="add-mod">+ Add mod</button></div></section></div>
+<div id="mod-panel"><section aria-labelledby="mods-heading"><div class="section-head"><h2 id="mods-heading">Mods</h2><span>4 categories · 100 points each</span></div><div class="table-wrap"><table class="mod-table"><thead><tr><th scope="col">Item</th><th scope="col">Mod title<small>/ 5</small></th><th scope="col">Captions / copy<small>/ 60</small></th><th scope="col">Graphics / photos<small>/ 30</small></th><th scope="col">Photo bys<small>/ 5</small></th><th scope="col">Total<small>/ 100</small></th></tr></thead><tbody id="mod-body"></tbody></table></div><div class="row-actions"><button type="button" class="bmc-btn bmc-btn-dark" id="add-mod">+ Add mod</button></div></section></div>
 <p id="status" class="status" role="status"></p>
-<details><summary>Rubric reference &amp; calculation</summary><div class="rubric"><div><h3>Story · 5 / 5 / 90</h3><p><strong>Headline:</strong> Catchy phrase.</p><p><strong>Subheadline:</strong> Complete sentence; avoids repeating information.</p><p><strong>Copy:</strong> Past tense; LQTQ; overview or unique perspective. People are not featured elsewhere on the spread. Meaningful quotes explain why or takeaways without repeating facts. Factual transitions, no editorializing, proper grammar, and target word count.</p></div><div><h3>Captions · 5 / 10 / 5 / 15 / 15 / 50</h3><p><strong>Photo selection:</strong> Well exposed; faces visible. Include photo by and file name.</p><p><strong>A:</strong> Makes sense with the photo and caption.</p><p><strong>B:</strong> Present tense. Who, what, when, where; describes the photo.</p><p><strong>C:</strong> Past tense. How; information not visible in the photo.</p><p><strong>DQ:</strong> Why they did it or enjoyed it; ends with “name said.” Does not repeat B or C. “Favorite” question: −50 points.</p></div><div><h3>Mods · 5 / 60 / 30 / 5</h3><p><strong>Title:</strong> Short and catchy.</p><p><strong>Captions / copy:</strong> ABCDQ captions OR 3–4 sentence quotes ending with “name said while in/at…”</p><p><strong>Graphics / photos:</strong> 30 points.</p><p><strong>Photo bys:</strong> 5 points.</p><h3>How the average works</h3><p>Sum of completed item totals ÷ completed item count. Each item has equal weight. Page average includes the story and completed captions; caption average excludes the story. Mods are calculated separately.</p><p>All category fields must contain valid scores for an item to count. Zero is a score. Partial rows are excluded and flagged. Results display to two decimal places; calculations use unrounded values.</p></div></div></details>
-<footer><span>One set of scores per item.<br>Scores stay on this page and clear when you reload or close it.</span><button type="button" class="bmc-btn plain-btn" id="reset">Reset this mode</button></footer>
+<details><summary>Rubric reference &amp; calculation</summary><div class="rubric"><div><h3>Story · 5 / 5 / 90</h3><p><strong>Headline:</strong> Catchy phrase.</p><p><strong>Subheadline:</strong> Complete sentence; avoids repeating information.</p><p><strong>Copy:</strong> Past tense; LQTQ; overview or unique perspective. People are not featured elsewhere on the spread. Meaningful quotes explain why or takeaways without repeating facts. Factual transitions, no editorializing, proper grammar, and target word count.</p></div><div><h3>Captions · 5 / 10 / 5 / 15 / 15 / 50</h3><p><strong>Photo selection:</strong> Well exposed; faces visible. Include photo by and file name.</p><p><strong>A:</strong> Makes sense with the photo and caption.</p><p><strong>B:</strong> Present tense. Who, what, when, where; describes the photo.</p><p><strong>C:</strong> Past tense. How; information not visible in the photo.</p><p><strong>DQ:</strong> Why they did it or enjoyed it; ends with “name said.” Does not repeat B or C. “Favorite” question: −50 points.</p></div><div><h3>Mods · 5 / 60 / 30 / 5</h3><p><strong>Title:</strong> Short and catchy.</p><p><strong>Captions / copy:</strong> ABCDQ captions OR 3–4 sentence quotes ending with “name said while in/at…”</p><p><strong>Graphics / photos:</strong> 30 points.</p><p><strong>Photo bys:</strong> 5 points.</p><h3>How the average works</h3><p>Sum of completed item totals ÷ completed item count. Each item has equal weight. Only checked, fully scored items count. Select story, captions, mods, or any combination. Unchecking an item preserves its scores and removes it from the average. Section checkboxes select or deselect every row in that section. Automatic advancement skips unchecked rows; Tab follows the normal field order.</p><p>All category fields must contain valid scores for an item to count. Zero is a score. Partial rows are excluded and flagged. Results display to two decimal places; calculations use unrounded values.</p></div></div></details>
+<footer><span>One set of scores per item.<br>Scores stay on this page and clear when you reload or close it.</span><button type="button" class="bmc-btn plain-btn" id="reset">Reset all scores</button></footer>
 </main>
 <script>
 'use strict';
 const schemas={story:[['Headline',5],['Subheadline',5],['Copy',90]],caption:[['Photo selection',5],['Photo by and file name',10],['A',5],['B',15],['C',15],['DQ',50]],mod:[['Mod title',5],['Captions / copy',60],['Graphics / photos',30],['Photo bys',5]]};
-let mode='page';
 let captionCount=0,modCount=0;
 const el=id=>document.getElementById(id);
 function addRow(type,label,body){
  const tr=document.createElement('tr');tr.dataset.type=type;tr.dataset.label=label;
- const heading=document.createElement('th');heading.scope='row';heading.textContent=label;tr.append(heading);
+ const heading=document.createElement('th');heading.scope='row';
+ const itemLabel=document.createElement('label');itemLabel.className='item-label';
+ const include=document.createElement('input');include.type='checkbox';include.className='include-item';include.checked=el(`include-${type}`).checked;include.setAttribute('aria-label',`Include ${label} in average`);
+ const labelText=document.createElement('span');labelText.textContent=label;itemLabel.append(include,labelText);heading.append(itemLabel);tr.append(heading);
  for(const [name,max] of schemas[type]){
   const td=document.createElement('td'),input=document.createElement('input');
-  input.type='number';input.min='0';input.max=String(max);input.step='any';input.inputMode='decimal';input.autocomplete='off';input.setAttribute('aria-label',`${label}: ${name}, out of ${max}`);input.title=`${name}: 0–${max}`;input.placeholder='—';td.append(input);tr.append(td);
+  input.type='text';input.className='score';input.dataset.max=String(max);input.spellcheck=false;input.inputMode='decimal';input.autocomplete='off';input.setAttribute('aria-label',`${label}: ${name}, out of ${max}`);input.title=`${name}: 0–${max}`;input.placeholder='—';td.append(input);tr.append(td);
  }
  if(type==='caption'){
-  const td=document.createElement('td'),check=document.createElement('input');check.type='checkbox';check.setAttribute('aria-label',`${label}: favorite question used, deduct 50 points`);td.append(check);tr.append(td);
+  const td=document.createElement('td'),check=document.createElement('input');check.type='checkbox';check.className='favorite';check.setAttribute('aria-label',`${label}: favorite question used, deduct 50 points`);td.append(check);tr.append(td);
  }
  const td=document.createElement('td');td.className='total';const output=document.createElement('span');output.className='row-total';output.textContent='—';const state=document.createElement('span');state.className='row-state';state.textContent='Not scored';td.append(output,state);tr.append(td);el(body).append(tr);return tr;
 }
 function scoreRow(tr){
- const fields=[...tr.querySelectorAll('input[type=number]')];
+ const fields=[...tr.querySelectorAll('input.score')];
  let started=false,invalid=false,missing=false,sum=0;
  fields.forEach(input=>{
-  const empty=input.value===''&&!input.validity.badInput;
+  const empty=input.value.trim()==='';
   if(empty){missing=true;input.removeAttribute('aria-invalid');return;}
   started=true;
-  const valid=input.validity.valid&&Number.isFinite(input.valueAsNumber);
+  const valid=validScore(input.value,Number(input.dataset.max));
   input.setAttribute('aria-invalid',String(!valid));
-  if(!valid)invalid=true;else sum+=input.valueAsNumber;
+  if(!valid)invalid=true;else sum+=Number(input.value);
  });
- const penalty=Boolean(tr.querySelector('input[type=checkbox]:checked'));
+ const penalty=Boolean(tr.querySelector('.favorite:checked'));
  started=started||penalty;
  if(!started)return {state:'blank'};
  if(invalid)return {state:'invalid'};
@@ -77,39 +80,63 @@ function aggregate(rows){
  return {count:complete.length,sum,average:complete.length?sum/complete.length:null};
 }
 const format=value=>value===null?'—':value.toFixed(2)+'%';
+function validScore(value,max){
+ return /^(?:\d+(?:\.\d+)?|\.\d+)$/.test(value)&&Number.isFinite(Number(value))&&Number(value)>=0&&Number(value)<=max;
+}
+function shouldAdvance(value,max,inputType,isComposing,enabled){
+ return enabled&&!isComposing&&Boolean(inputType?.startsWith('insert'))&&/^\d{2}$/.test(value)&&validScore(value,max);
+}
+function nextScore(current,fields){
+ const index=fields.indexOf(current);
+ return index<0?null:fields.slice(index+1).find(input=>input.closest('tr').querySelector('.include-item').checked)||null;
+}
+function advance(input){const next=nextScore(input,[...document.querySelectorAll('input.score')]);if(next)next.focus();}
 function update(){
  const rows=[...document.querySelectorAll('tbody tr')].map(tr=>{
-  const result=scoreRow(tr);tr.querySelector('.row-total').textContent=result.state==='complete'?String(result.total):'—';
-  tr.querySelector('.row-state').textContent=({blank:'Not scored',partial:'Incomplete',invalid:'Check range',complete:'Included'})[result.state];
-  return {...result,type:tr.dataset.type,label:tr.dataset.label};
+  const result=scoreRow(tr),included=tr.querySelector('.include-item').checked;
+  tr.dataset.included=String(included);
+  tr.querySelector('.row-total').textContent=result.state==='complete'?String(result.total):'—';
+  tr.querySelector('.row-state').textContent=included?({blank:'Not scored',partial:'Incomplete',invalid:'Check score',complete:'Included'})[result.state]:'Not selected';
+  return {...result,included,type:tr.dataset.type,label:tr.dataset.label};
  });
- const active=rows.filter(r=>mode==='mod'?r.type==='mod':r.type!=='mod'),result=aggregate(active);
+ for(const type of Object.keys(schemas)){
+  const group=rows.filter(r=>r.type===type),checked=group.filter(r=>r.included).length;
+  el(`include-${type}`).checked=checked===group.length;
+  el(`include-${type}`).indeterminate=checked>0&&checked<group.length;
+ }
+ const active=rows.filter(r=>r.included),result=aggregate(active);
  const pending=active.filter(r=>r.state==='partial'||r.state==='invalid');
- el('grade-label').textContent=mode==='mod'?'Mod average':'Page average';el('grade').textContent=format(result.average);el('completed').textContent=String(result.count);
- el('formula').textContent=result.count?`${result.sum} points ÷ ${result.count} item${result.count===1?'':'s'}${pending.length?' · provisional':''}`:'No completed items yet';
- el('count-detail').textContent=mode==='mod'?'Completed mods only':'Story + dominant + captions';
- if(mode==='page'){
-  const captions=aggregate(active.filter(r=>r.type==='caption'));
-  el('secondary-label').textContent='Caption average';el('secondary').textContent=format(captions.average);el('secondary-detail').textContent=`${captions.count} completed caption${captions.count===1?'':'s'} · includes dominant`;
- }else{el('secondary-label').textContent='Unfinished items';el('secondary').textContent=String(pending.length);el('secondary-detail').textContent='Excluded until fully scored';}
+ el('grade').textContent=format(result.average);el('completed').textContent=String(result.count);
+ el('formula').textContent=result.count?`${result.sum} points ÷ ${result.count} item${result.count===1?'':'s'}${pending.length?' · provisional':''}`:active.length?'No completed items yet':'No items selected';
+ el('count-detail').textContent=`${active.length} selected · ${result.count} fully scored`;
+ el('secondary').textContent=String(pending.length);
  el('status').textContent=pending.length?`Excluded from this average: ${pending.map(r=>r.label).join(', ')}. Complete every category with a valid score (0–maximum).`:'';
 }
-function setMode(next){mode=next;el('page-panel').hidden=mode!=='page';el('mod-panel').hidden=mode!=='mod';el('page-mode').setAttribute('aria-pressed',String(mode==='page'));el('mod-mode').setAttribute('aria-pressed',String(mode==='mod'));update();}
-el('page-mode').addEventListener('click',()=>setMode('page'));el('mod-mode').addEventListener('click',()=>setMode('mod'));
-el('add-caption').addEventListener('click',()=>{captionCount++;const row=addRow('caption',`Photo ${captionCount}`,'caption-body');update();row.querySelector('input').focus();});
-el('add-mod').addEventListener('click',()=>{modCount++;const row=addRow('mod',`Mod ${modCount}`,'mod-body');update();row.querySelector('input').focus();});
-document.querySelector('main').addEventListener('input',event=>{if(event.target.matches('input'))update();});
-// Enter advances through score boxes; Tab preserves native row-wise navigation.
-document.addEventListener('keydown',event=>{
- if(event.key!=='Enter'||!event.target.matches('input[type=number]'))return;
- event.preventDefault();const fields=[...el(mode==='page'?'page-panel':'mod-panel').querySelectorAll('input[type=number]')];const next=fields[fields.indexOf(event.target)+1];if(next)next.focus();
+for(const group of document.querySelectorAll('[data-group]')){
+ group.addEventListener('change',()=>{
+  document.querySelectorAll(`tr[data-type="${group.dataset.group}"] .include-item`).forEach(input=>{input.checked=group.checked;});update();
+ });
+}
+el('add-caption').addEventListener('click',()=>{captionCount++;const row=addRow('caption',`Photo ${captionCount}`,'caption-body');update();row.querySelector('input.score').focus();});
+el('add-mod').addEventListener('click',()=>{modCount++;const row=addRow('mod',`Mod ${modCount}`,'mod-body');update();row.querySelector('input.score').focus();});
+document.querySelector('main').addEventListener('input',event=>{
+ const input=event.target;if(!input.matches('input.score'))return;
+ update();
+ if(shouldAdvance(input.value,Number(input.dataset.max),event.inputType,event.isComposing,el('auto-advance').checked))advance(input);
 });
-document.addEventListener('focusin',event=>{if(event.target.matches('input[type=number]'))event.target.select();});
+document.querySelector('main').addEventListener('change',event=>{if(event.target.matches('.include-item, .favorite'))update();});
+// Automatic advancement and Enter move between score fields; Tab remains native.
+document.addEventListener('keydown',event=>{
+ if(event.key!=='Enter'||!event.target.matches('input.score'))return;
+ event.preventDefault();advance(event.target);
+});
+document.addEventListener('focusin',event=>{if(event.target.matches('input.score'))event.target.select();});
 el('reset').addEventListener('click',()=>{
- const panel=el(mode==='page'?'page-panel':'mod-panel');
- if(![...panel.querySelectorAll('input')].some(input=>input.type==='checkbox'?input.checked:input.value!==''))return;
- if(!window.confirm(`Clear all scores in ${mode==='page'?'story + dom / captions':'mods'} mode?`))return;
- panel.querySelectorAll('input').forEach(input=>{if(input.type==='checkbox')input.checked=false;else input.value='';});update();panel.querySelector('input').focus();
+ const scores=[...document.querySelectorAll('input.score')],penalties=[...document.querySelectorAll('.favorite')];
+ if(!scores.some(input=>input.value!=='')&&!penalties.some(input=>input.checked))return;
+ if(!window.confirm('Clear all story, caption, and mod scores? Item selections will stay the same.'))return;
+ scores.forEach(input=>{input.value='';});penalties.forEach(input=>{input.checked=false;});update();
+ const first=scores.find(input=>input.closest('tr').querySelector('.include-item').checked);if(first)first.focus();
 });
 addRow('story','Story','story-body');for(let i=1;i<=8;i++){captionCount=i;addRow('caption',i===1?'Dominant':`Photo ${i}`,'caption-body');}for(let i=1;i<=2;i++){modCount=i;addRow('mod',`Mod ${i}`,'mod-body');}update();
 </script>
